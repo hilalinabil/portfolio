@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nabil Hilali | Portfolio</title>
+
+    <!-- Meta tags for SEO -->
+    <meta name="description"
+        content="Portfolio of Nabil Hilali, a passionate software engineering student specializing in Spring Boot, Clean Architecture, and full-stack enterprise solutions.">
+    <meta name="keywords"
+        content="Nabil Hilali, Software Engineer, Portfolio, Full Stack, Developer, Spring Boot, Java, Node.js, PHP, Symfony, React, Q-learning, CPGE, EMSI">
+    <meta name="author" content="Nabil Hilali">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Nabil Hilali | Portfolio">
+    <meta property="og:description"
+        content="Portfolio of Nabil Hilali, a passionate software engineering student specializing in Spring Boot, Clean Architecture, and full-stack enterprise solutions.">
+    <meta property="og:image" content="assets/profile.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Theme Initialization Script (Prevents flash of default theme) -->
+    <script>
+        (function () {
+            const savedTheme = localStorage.getItem('portfolio-theme') || 'dark';
+            if (savedTheme === 'dark') {
+                document.documentElement.classList.add('dark-theme');
+            } else {
+                document.documentElement.classList.remove('dark-theme');
+            }
+        })();
+    </script>
+</head>
+
+<body>
+
+    <!-- Canvas Background for Animated Particles -->
+    <canvas id="particle-canvas" class="particle-background"></canvas>
+
+    <!-- Header / Navigation Bar -->
+    <header class="glass-header">
+        <div class="nav-container">
+            <a href="#home" class="logo-link">
+                <span class="logo-text">NH<span class="logo-dot">.</span></span>
+            </a>
+
+            <nav class="desktop-nav">
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link active" data-i18n="nav-home">Home</a></li>
+                    <li><a href="#about" class="nav-link" data-i18n="nav-about">About</a></li>
+                    <li><a href="#skills" class="nav-link" data-i18n="nav-skills">Skills</a></li>
+                    <li><a href="#experience" class="nav-link" data-i18n="nav-experience">Experience</a></li>
+                    <li><a href="#projects" class="nav-link" data-i18n="nav-projects">Projects</a></li>
+                    <li><a href="#education" class="nav-link" data-i18n="nav-education">Education</a></li>
+                    <li><a href="#certifications" class="nav-link" data-i18n="nav-certifications">Certifications</a>
+                    </li>
+                    <li><a href="#achievements" class="nav-link" data-i18n="nav-achievements">Achievements</a></li>
+                    <li><a href="#contact" class="nav-link" data-i18n="nav-contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <!-- Theme Switcher Button -->
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark/light mode">
+                    <i data-lucide="moon" class="icon-dark"></i>
+                    <i data-lucide="sun" class="icon-light"></i>
+                </button>
+
+                <!-- Language Switcher Pill -->
+                <div class="language-switcher" id="language-switcher">
+                    <span class="lang-slider"></span>
+                    <button class="lang-btn active" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="fr">FR</button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-toggle" id="mobile-menu-btn" aria-label="Open navigation menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu Dropdown -->
+        <div class="mobile-nav-menu" id="mobile-nav-menu">
+            <ul class="mobile-nav-links">
+                <li><a href="#home" class="mobile-nav-link" data-i18n="nav-home">Home</a></li>
+                <li><a href="#about" class="mobile-nav-link" data-i18n="nav-about">About</a></li>
+                <li><a href="#skills" class="mobile-nav-link" data-i18n="nav-skills">Skills</a></li>
+                <li><a href="#experience" class="mobile-nav-link" data-i18n="nav-experience">Experience</a></li>
+                <li><a href="#projects" class="mobile-nav-link" data-i18n="nav-projects">Projects</a></li>
+                <li><a href="#education" class="mobile-nav-link" data-i18n="nav-education">Education</a></li>
+                <li><a href="#certifications" class="mobile-nav-link" data-i18n="nav-certifications">Certifications</a>
+                </li>
+                <li><a href="#achievements" class="mobile-nav-link" data-i18n="nav-achievements">Achievements</a></li>
+                <li><a href="#contact" class="mobile-nav-link" data-i18n="nav-contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- 1. HERO SECTION -->
+        <section id="home" class="hero-section scroll-reveal-section">
+            <div class="mesh-gradient-bg"></div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="badge-container hero-badge-container">
+
+                    </div>
+
+                    <h1 class="hero-title animate-text">
+                        <span class="greeting-text" data-i18n="hero-greeting">Hello, I'm</span>
+                        <span class="name-text" id="hero-name">Hilali Nabil</span>
+                        <span class="title-text gradient-text" id="hero-title">Staff Software Engineer</span>
+                    </h1>
+
+                    <p class="hero-description" id="hero-bio">
+                        Passionate software engineer specializing in building high-performance web applications,
+                        distributed systems, and developer-centric tooling. Driven by design precision, clean code, and
+                        user experience.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn btn-primary btn-lg">
+                            <span data-i18n="hero-contact-btn">Contact Me</span>
+                            <i data-lucide="arrow-right"></i>
+                        </a>
+                        <a href="#projects" class="btn btn-secondary btn-lg">
+                            <span data-i18n="hero-projects-btn">View Projects</span>
+                            <i data-lucide="code-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="profile-image-wrapper">
+                        <div class="profile-glowing-back"></div>
+                        <div class="profile-inner-border"></div>
+                        <img src="assets/profile.png" alt="Profile avatar" class="profile-img" id="hero-avatar">
+                    </div>
+                </div>
+            </div>
+
+            <div class="scroll-indicator">
+                <a href="#about" aria-label="Scroll down to About section">
+                    <div class="mouse-wheel"></div>
+                </a>
+            </div>
+        </section>
+
+        <!-- 2. ABOUT ME SECTION -->
+        <section id="about" class="about-section scroll-reveal-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-i18n="about-title">About Me</h2>
+                    <p class="section-subtitle" data-i18n="about-subtitle">Biography &amp; Core Competency Metrics</p>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-text-content">
+                        <h3 class="about-lead-title" data-i18n="about-lead">Who I am &amp; What I do</h3>
+                        <p class="about-bio-text" id="about-bio">
+                            I am a software engineer focused on building robust, scalable web products. With a deep
+                            respect for design aesthetics and UI patterns, I bridge the gap between design systems and
+                            systems engineering.
+                        </p>
+                        <p class="about-bio-secondary" data-i18n="about-bio-secondary">
+                            Currently studying Informatique et Génie Logiciel at EMSI Casablanca, I have completed two
+                            software engineering internships where I designed database architectures and implemented
+                            Q-learning optimization solvers. I am passionate about applying clean code principles,
+                            Hexagonal Architecture, and Domain-Driven Design to build robust enterprise-grade
+                            applications.
+                        </p>
+                    </div>
+
+                    <!-- Stats cards container dynamically filled -->
+                    <div class="about-stats-grid" id="stats-container">
+                        <!-- Stats rendered from JS -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. SKILLS SECTION -->
+        <section id="skills" class="skills-section scroll-reveal-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-i18n="skills-title">My Skills</h2>
+                    <p class="section-subtitle" data-i18n="skills-subtitle">Core technical stack categorized by domain
+                        expertise</p>
+                </div>
+
+                <!-- Category tabs -->
+                <div class="skills-tabs" id="skills-tabs">
+                    <button class="skills-tab-btn active" data-category="all" data-i18n="skills-tab-all">All
+                        Skills</button>
+                    <button class="skills-tab-btn" data-category="frontend"
+                        data-i18n="skills-tab-frontend">Frontend</button>
+                    <button class="skills-tab-btn" data-category="backend"
+                        data-i18n="skills-tab-backend">Backend</button>
+                    <button class="skills-tab-btn" data-category="database"
+                        data-i18n="skills-tab-database">Database</button>
+                    <button class="skills-tab-btn" data-category="cloud" data-i18n="skills-tab-cloud">Cloud</button>
+                    <button class="skills-tab-btn" data-category="devops" data-i18n="skills-tab-devops">DevOps</button>
+                    <button class="skills-tab-btn" data-category="tools" data-i18n="skills-tab-tools">Tools</button>
+                </div>
+
+                <!-- Skills cards container -->
+                <div class="skills-grid" id="skills-container">
+                    <!-- Loaded dynamically from portfolioData -->
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. EXPERIENCE TIMELINE SECTION -->
+        <section id="experience" class="experience-section scroll-reveal-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-i18n="experience-title">Professional Experience</h2>
+                    <p class="section-subtitle" data-i18n="experience-subtitle">My professional career path and key
+                        contributions</p>
+                </div>
+
+                <!-- Vertical Timeline Container -->
+                <div class="timeline-container" id="experience-timeline">
+                    <!-- Rendered dynamically from JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. PROJECTS SECTION -->
+        <section id="projects" class="projects-section scroll-reveal-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-i18n="projects-title">Featured Projects</h2>
+                    <p class="section-subtitle" data-i18n="projects-subtitle">A curated collection of my recent software
+                        and open-source work</p>
+                </div>
+
+                <!-- Filters container -->
+                <div class="projects-filter-bar">
+                    <button class="project-filter-btn active" data-filter="all"
+                        data-i18n="projects-filter-all">All</button>
+                    <button class="project-filter-btn" data-filter="frontend"
+                        data-i18n="projects-filter-frontend">Frontend</button>
+                    <button class="project-filter-btn" data-filter="backend"
+                        data-i18n="projects-filter-backend">Backend</button>
+                    <button class="project-filter-btn" data-filter="fullstack"
+                        data-i18n="projects-filter-fullstack">Full Stack</button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid" id="projects-container">
+                    <!-- Rendered dynamically from JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. EDUCATION SECTION -->
+        <section id="education" class="education-section scroll-reveal-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-i18n="education-title">Education</h2>
+                    <p class="section-subtitle" data-i18n="education-subtitle">Academic foundations and credentials</p>
+                </div>
+
+                <div class="education-grid" id="education-container">
+                    <!-- Rendered dynamically from JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. CERTIFICATIONS SECTION -->
+        <section id="certifications" class="certifications-section scroll-reveal-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-i18n="certifications-title">Certifications</h2>
+                    <p class="section-subtitle" data-i18n="certifications-subtitle">Professional credentials and
+                        specializations</p>
+                </div>
+
+                <div class="certifications-grid" id="certifications-container">
+                    <!-- Rendered dynamically from JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. ACHIEVEMENTS SECTION -->
+        <section id="achievements" class="achievements-section scroll-reveal-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-i18n="achievements-title">Achievements</h2>
+                    <p class="section-subtitle" data-i18n="achievements-subtitle">Awards, hackathons, and global
+                        highlights</p>
+                </div>
+
+                <div class="achievements-grid" id="achievements-container">
+                    <!-- Rendered dynamically from JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. TESTIMONIALS SECTION -->
+
+        <!-- 10. CONTACT SECTION -->
+        <section id="contact" class="contact-section scroll-reveal-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-i18n="contact-title">Contact Me</h2>
+                    <p class="section-subtitle" data-i18n="contact-subtitle">Let's discuss new projects, collaboration,
+                        or select positions</p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info-panel">
+                        <h3 class="contact-info-title" data-i18n="contact-connect">Let's Connect</h3>
+                        <p class="contact-info-desc" data-i18n="contact-desc">
+                            Feel free to reach out. I will respond within 24 business hours to discuss your engineering
+                            goals or project scope.
+                        </p>
+
+                        <div class="contact-details-list">
+                            <div class="contact-detail-item">
+                                <div class="detail-icon">
+                                    <i data-lucide="mail"></i>
+                                </div>
+                                <div class="detail-content">
+                                    <span class="detail-label" data-i18n="contact-email-label">Email</span>
+                                    <a href="mailto:alex.rivera@dev.io" class="detail-value"
+                                        id="contact-email">alex.rivera@dev.io</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-detail-item">
+                                <div class="detail-icon">
+                                    <i data-lucide="phone"></i>
+                                </div>
+                                <div class="detail-content">
+                                    <span class="detail-label" data-i18n="contact-phone-label">Phone</span>
+                                    <a href="tel:+15552345678" class="detail-value" id="contact-phone">+1 (555)
+                                        234-5678</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-detail-item">
+                                <div class="detail-icon">
+                                    <i data-lucide="map-pin"></i>
+                                </div>
+                                <div class="detail-content">
+                                    <span class="detail-label" data-i18n="contact-location-label">Location</span>
+                                    <span class="detail-value" id="contact-location">Casablanca, Morocco</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-social-channels">
+                            <span class="social-channels-label" data-i18n="contact-social-label">Find me on</span>
+                            <div class="social-links-container">
+                                <a href="https://github.com/hilalinabil" target="_blank" rel="noopener noreferrer"
+                                    class="social-icon-link" id="contact-github" aria-label="GitHub Profile">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide-icon">
+                                        <path
+                                            d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                                        <path d="M9 18c-4.51 2-5-2-7-2" />
+                                    </svg>
+                                </a>
+                                <a href="https://linkedin.com/in/hilali-nabil-127639355" target="_blank"
+                                    rel="noopener noreferrer" class="social-icon-link" id="contact-linkedin"
+                                    aria-label="LinkedIn Profile">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide-icon">
+                                        <path
+                                            d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                        <rect width="4" height="12" x="2" y="9" />
+                                        <circle cx="4" cy="4" r="2" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 11. FOOTER -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-top-row">
+                <a href="#home" class="logo-link">
+                    <span class="logo-text">NH<span class="logo-dot">.</span></span>
+                </a>
+                <ul class="footer-nav">
+                    <li><a href="#home" data-i18n="nav-home">Home</a></li>
+                    <li><a href="#about" data-i18n="nav-about">About</a></li>
+                    <li><a href="#skills" data-i18n="nav-skills">Skills</a></li>
+                    <li><a href="#experience" data-i18n="nav-experience">Experience</a></li>
+                    <li><a href="#projects" data-i18n="nav-projects">Projects</a></li>
+                    <li><a href="#contact" data-i18n="nav-contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <div class="footer-bottom-row">
+                <div class="footer-copyright">
+                    <p>&copy; <span id="footer-year">2026</span> <span id="footer-name">Nabil Hilali</span>. <span
+                            data-i18n="footer-rights">All Rights Reserved.</span></p>
+                </div>
+
+                <div class="footer-socials">
+                    <a href="https://github.com/hilalinabil" target="_blank" rel="noopener noreferrer"
+                        id="footer-github" aria-label="GitHub">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide-icon">
+                            <path
+                                d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                            <path d="M9 18c-4.51 2-5-2-7-2" />
+                        </svg>
+                    </a>
+                    <a href="https://linkedin.com/in/hilali-nabil-127639355" target="_blank" rel="noopener noreferrer"
+                        id="footer-linkedin" aria-label="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide-icon">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                            <rect width="4" height="12" x="2" y="9" />
+                            <circle cx="4" cy="4" r="2" />
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Back to Top Button -->
+                <button id="back-to-top" class="back-to-top-btn" aria-label="Scroll back to top of the page">
+                    <i data-lucide="arrow-up"></i>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Core Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
