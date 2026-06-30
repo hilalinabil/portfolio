@@ -112,7 +112,7 @@ const portfolioData = {
                 image: "assets/project3.png"
             },
             {
-                title: "Hexagonal Inovice Management Engine",
+                title: "Hexagonal Invoice Management Engine",
                 category: "Backend",
                 description: "A modular, clean-architecture enterprise billing engine enforcing strict domain boundaries and transaction safety.",
                 technologies: ["Spring Boot 3", "Spring Security", "Spring Data JPA", "H2 Database", "Hibernate", "Lombok"],
