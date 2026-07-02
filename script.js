@@ -380,20 +380,6 @@ const portfolioData = {
                 date: "Jan 2025",
                 link: "https://www.coursera.org/account/accomplishments/verify/cert_cpp_oop_epfl"
             }
-        ],
-        achievements: [
-            {
-                title: "Baccalauréat Mention 'Très Bien'",
-                category: "Academic Distinction",
-                detail: "National Scientific Baccalaureate",
-                description: "Awarded the highest academic distinction (Très Bien) in Mathematical Sciences A, reflecting strong analytical foundation."
-            },
-            {
-                title: "CPGE Competitive Admission",
-                category: "Competitive Selection",
-                detail: "Lycée Mohammed V CPGE",
-                description: "Successfully admitted to and completed the rigorous Classes Préparatoires (CPGE) curriculum in Mathematics and Physics."
-            }
         ]
     },
     fr: {
@@ -726,22 +712,7 @@ const portfolioData = {
                 date: "Jan 2025",
                 link: "https://www.coursera.org/account/accomplishments/verify/cert_cpp_oop_epfl"
             }
-        ],
-        achievements: [
-            {
-                title: "Baccalauréat Mention 'Très Bien'",
-                category: "Distinction Académique",
-                detail: "Baccalauréat Scientifique National",
-                description: "Obtenu avec la mention 'Très Bien' en Sciences Mathématiques A, reflétant des bases analytiques solides."
-            },
-            {
-                title: "Admission aux CPGE",
-                category: "Sélection sur Concours",
-                detail: "CPGE Lycée Mohammed V",
-                description: "Admis avec succès et a suivi le programme rigoureux des Classes Préparatoires (CPGE) en Mathématiques et Physique."
-            }
-        ],
-        testimonials: []
+        ]
     }
 };
 
