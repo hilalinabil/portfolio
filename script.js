@@ -62,7 +62,7 @@ const portfolioData = {
             { value: "2", label: "Internships Completed" },
             { value: "16", label: "Projects Completed" },
             { value: "30+", label: "Tech Stack Tools" },
-            { value: "4", label: "Certifications" }
+            { value: "5", label: "Certifications" }
         ],
         skills: skillsData,
         projects: [
@@ -154,7 +154,7 @@ const portfolioData = {
                 ],
                 github: "https://github.com/hilalinabil/stage",
                 demo: "#",
-                image: "assets/project1.png"
+                image: "assets/project6.png"
             },
             {
                 title: "Hospital Management Desktop App",
@@ -169,7 +169,7 @@ const portfolioData = {
                 ],
                 github: "https://github.com/hilalinabil/Javafx",
                 demo: "#",
-                image: "assets/project2.png"
+                image: "assets/project7.png"
             },
             {
                 title: "Real-Time Chat App Backend",
@@ -184,7 +184,7 @@ const portfolioData = {
                 ],
                 github: "https://github.com/hilalinabil/chat_backend",
                 demo: "#",
-                image: "assets/project3.png"
+                image: "assets/project8.png"
             },
             {
                 title: "Interactive Mermaid Diagram Viewer",
@@ -199,7 +199,7 @@ const portfolioData = {
                 ],
                 github: "https://github.com/hilalinabil/Diagrams_repo",
                 demo: "#",
-                image: "assets/project4.png"
+                image: "assets/project9.png"
             },
             {
                 title: "E-Commerce REST API Core",
@@ -214,7 +214,7 @@ const portfolioData = {
                 ],
                 github: "https://github.com/hilalinabil/E-commerce",
                 demo: "#",
-                image: "assets/project5.png"
+                image: "assets/project10.png"
             },
             {
                 title: "React Task Manager",
@@ -229,7 +229,7 @@ const portfolioData = {
                 ],
                 github: "https://github.com/hilalinabil/frontend_task_manager",
                 demo: "#",
-                image: "assets/project1.png"
+                image: "assets/project11.png"
             },
             {
                 title: "Symfony Product Management App",
@@ -244,7 +244,7 @@ const portfolioData = {
                 ],
                 github: "https://github.com/hilalinabil/Prodprjt",
                 demo: "#",
-                image: "assets/project2.png"
+                image: "assets/project12.png"
             },
             {
                 title: "Spring Boot Task Manager",
@@ -259,7 +259,7 @@ const portfolioData = {
                 ],
                 github: "https://github.com/hilalinabil/Spring_prjt",
                 demo: "#",
-                image: "assets/project3.png"
+                image: "assets/project13.png"
             },
             {
                 title: "Object-Oriented Banking System",
@@ -274,7 +274,7 @@ const portfolioData = {
                 ],
                 github: "https://github.com/hilalinabil/OOP_BANK",
                 demo: "#",
-                image: "assets/project4.png"
+                image: "assets/project14.png"
             },
             {
                 title: "Node.js RESTful CRUD API",
@@ -289,7 +289,7 @@ const portfolioData = {
                 ],
                 github: "https://github.com/hilalinabil/crud_api",
                 demo: "#",
-                image: "assets/project5.png"
+                image: "assets/project15.png"
             },
         
         ],
@@ -379,6 +379,12 @@ const portfolioData = {
                 issuer: "EPFL (Coursera)",
                 date: "Jan 2025",
                 link: "https://www.coursera.org/account/accomplishments/verify/cert_cpp_oop_epfl"
+            },
+            {
+                title: "Introduction to Big Data",
+                issuer: "University of California San Diego (Coursera)",
+                date: "Jun 2026",
+                link: "https://www.coursera.org/account/accomplishments/verify/cert_intro_big_data_ucsd"
             }
         ]
     },
@@ -395,7 +401,7 @@ const portfolioData = {
             { value: "2", label: "Stages réalisés" },
             { value: "16", label: "Projets finalisés" },
             { value: "30+", label: "Outils maîtrisés" },
-            { value: "4", label: "Certifications obtenues" }
+            { value: "5", label: "Certifications obtenues" }
         ],
         skills: skillsData,
         projects: [
@@ -487,7 +493,7 @@ const portfolioData = {
                 ],
                 github: "https://github.com/hilalinabil/stage",
                 demo: "#",
-                image: "assets/project1.png"
+                image: "assets/project6.png"
             },
             {
                 title: "Application de Gestion Hospitalière",
@@ -502,7 +508,7 @@ const portfolioData = {
                 ],
                 github: "https://github.com/hilalinabil/Javafx",
                 demo: "#",
-                image: "assets/project2.png"
+                image: "assets/project7.png"
             },
             {
                 title: "Backend d'Application de Chat Temps Réel",
@@ -517,7 +523,7 @@ const portfolioData = {
                 ],
                 github: "https://github.com/hilalinabil/chat_backend",
                 demo: "#",
-                image: "assets/project3.png"
+                image: "assets/project8.png"
             },
             {
                 title: "Visualiseur Interactif de Diagrammes Mermaid",
@@ -532,7 +538,7 @@ const portfolioData = {
                 ],
                 github: "https://github.com/hilalinabil/Diagrams_repo",
                 demo: "#",
-                image: "assets/project4.png"
+                image: "assets/project9.png"
             },
             {
                 title: "API REST Core pour E-Commerce",
@@ -547,7 +553,7 @@ const portfolioData = {
                 ],
                 github: "https://github.com/hilalinabil/E-commerce",
                 demo: "#",
-                image: "assets/project5.png"
+                image: "assets/project10.png"
             },
             {
                 title: "Gestionnaire de Tâches React",
@@ -562,7 +568,7 @@ const portfolioData = {
                 ],
                 github: "https://github.com/hilalinabil/frontend_task_manager",
                 demo: "#",
-                image: "assets/project1.png"
+                image: "assets/project11.png"
             },
             {
                 title: "Application de Gestion de Produits Symfony",
@@ -577,7 +583,7 @@ const portfolioData = {
                 ],
                 github: "https://github.com/hilalinabil/Prodprjt",
                 demo: "#",
-                image: "assets/project2.png"
+                image: "assets/project12.png"
             },
             {
                 title: "Gestionnaire de Tâches Spring Boot",
@@ -592,7 +598,7 @@ const portfolioData = {
                 ],
                 github: "https://github.com/hilalinabil/Spring_prjt",
                 demo: "#",
-                image: "assets/project3.png"
+                image: "assets/project13.png"
             },
             {
                 title: "Système Bancaire Orienté Objet",
@@ -607,7 +613,7 @@ const portfolioData = {
                 ],
                github: "https://github.com/hilalinabil/OOP_BANK",
                 demo: "#",
-                image: "assets/project4.png"
+                image: "assets/project14.png"
             },
             {
                 title: "API CRUD RESTful Node.js",
@@ -622,7 +628,7 @@ const portfolioData = {
                 ],
                 github: "https://github.com/hilalinabil/crud_api",
                 demo: "#",
-                image: "assets/project5.png"
+                image: "assets/project15.png"
             }
         ],
         experiences: [
@@ -711,6 +717,12 @@ const portfolioData = {
                 issuer: "EPFL (Coursera)",
                 date: "Jan 2025",
                 link: "https://www.coursera.org/account/accomplishments/verify/cert_cpp_oop_epfl"
+            },
+            {
+                title: "Introduction au Big Data",
+                issuer: "University of California San Diego (Coursera)",
+                date: "Juin 2026",
+                link: "https://www.coursera.org/account/accomplishments/verify/cert_intro_big_data_ucsd"
             }
         ]
     }
@@ -1175,10 +1187,6 @@ function renderProjects() {
                         <a href="${proj.github}" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
                             <span>GitHub</span>
-                        </a>
-                        <a href="${proj.demo}" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
-                            <i data-lucide="external-link"></i>
-                            <span>${liveDemoLabel}</span>
                         </a>
                     </div>
                 </div>
