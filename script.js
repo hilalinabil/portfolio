@@ -295,9 +295,21 @@ const portfolioData = {
         ],
         experiences: [
             {
+                position: "Prompt Engineer (Freelance)",
+                company: "Self-Employed / Remote",
+                duration: "Oct 2024 - Jan 2025",
+                description: "Designed, engineered, and evaluated high-fidelity prompt architectures and system instructions to elicit structured JSON payloads from Large Language Models (LLMs).",
+                achievements: [
+                    "Engineered highly structured, production-grade prompts using advanced methodologies (Few-Shot, Chain-of-Thought, and role-based constraints) to consistently yield high-value, deterministic LLM outputs.",
+                    "Designed and validated complex JSON schema specifications for model inputs/outputs, establishing seamless parsing pipelines and minimizing runtime deserialization errors.",
+                    "Conducted rigorous qualitative and quantitative evaluations of model responses, establishing benchmark parameters to significantly reduce hallucination rates and output latency.",
+                    "Optimized token consumption and context window allocation through prompt chaining, system prompt tuning, and structured formatting."
+                ]
+            },
+            {
                 position: "Software Engineering Intern",
                 company: "Entreprise de Transport",
-                duration: "Jul 2024 - Sep 2024",
+                duration: "Jul 2025 - Sep 2025",
                 description: "Developed an intelligent desktop application for warehouse management and route optimization to reduce logistics costs.",
                 achievements: [
                     "Designed and implemented a PyQt5 desktop dashboard supporting SQLite, MongoDB, MySQL, and PostgreSQL databases using the factory design pattern.",
@@ -629,9 +641,21 @@ const portfolioData = {
         ],
         experiences: [
             {
+                position: "Ingénieur Prompt (Freelance)",
+                company: "Indépendant / À distance",
+                duration: "Oct 2024 - Janv 2025",
+                description: "Conception, structuration et évaluation d'architectures de prompts et d'instructions système complexes pour générer des données structurées au format JSON via des modèles de langage (LLM).",
+                achievements: [
+                    "Création de prompts de production hautement structurés en appliquant des techniques avancées (Few-Shot learning, Chain-of-Thought, contraintes système) pour garantir des sorties déterministes et de haute qualité.",
+                    "Définition et validation de schémas JSON stricts pour les entrées et sorties des modèles, assurant l'intégrité des données et éliminant les erreurs de parsing en production.",
+                    "Évaluation rigoureuse des réponses des modèles à travers l'analyse de métriques de performance, réduisant de manière significative le taux d'hallucinations et la latence.",
+                    "Optimisation de la consommation de tokens et de la fenêtre de contexte grâce à l'enchaînement de prompts (prompt chaining) et au réglage fin des instructions système."
+                ]
+            },
+            {
                 position: "Stagiaire en Ingénierie Logicielle",
                 company: "Entreprise de Transport",
-                duration: "Juil 2024 - Sept 2024",
+                duration: "Juil 2025 - Sept 2025",
                 description: "Développement d'une application de bureau intelligente pour la gestion d'entrepôt et l'optimisation des trajets afin de réduire les coûts logistiques.",
                 achievements: [
                     "Conception et implémentation d'un tableau de bord de bureau PyQt5 supportant SQLite, MongoDB, MySQL et PostgreSQL via le pattern Factory.",
